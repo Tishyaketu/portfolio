@@ -36,14 +36,14 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          
+          <br />
         </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          {/* <img src="/people.webp" alt="" /> */}
           <h1>
             <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
           </h1>

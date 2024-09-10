@@ -58,15 +58,14 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <div className="contactEmails">
+            <div><a>dtishyaketu@gmail.com</a></div>
+            <div><a>tdeshpande@scu.edu</a></div>
+          </div>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>500 El Camino Real, Santa Clara, CA</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -108,6 +107,7 @@ const Contact = () => {
         >
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
+          <input type="text" required placeholder="Company" name="name"/>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
